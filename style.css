@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'VT323', monospace;
+  background-color: black;
+  color: chartreuse;
+}
+
+.container {
+  padding: 25px calc((100vw - 960px) / 2);
+}
+
+p {
+  font-size: 60px;
+}
+
+.intro-text {
+  display: inline;
+}
+
+.blink {
+  width: 13px;
+  height: 45px;
+  background-color: chartreuse;
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  opacity: 0;
+  animation-name: blink;
+  animation-duration: 700ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ball {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: chartreuse;
+}
+
+.ball-wrapper {
+  display: flex;
+}
